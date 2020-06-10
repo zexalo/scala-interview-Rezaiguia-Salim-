@@ -1,0 +1,49 @@
+
+1) Explain REST and RESTful
+
+REST is an architecture style for APIs based on the HTTP protocol using its various requests. There are several levels of creation of a REST API, the last one being considered as RESTful because it takes all the criteria into consideration
+Level 0 (REST) : POST request and only 1 return code (200) --> Level 4 (RESTful) : GET, POST, PUT, DELETE request and ALL return code are used.
+
+
+2) Explain the architectural style for the creation of a web API (client server communication, formatting language, etc.)
+
+REST API is the interface that links software with different languages. It uses a language understandable by any software like Json or XML. URI architecture to identify resources ( EX : Users/id/ to find users by id).
+
+
+3) Explain HTTP requests types when used with RESTful web (GET, PUT, POST, etc.)
+
+Requests:
+
+GET    : Recovery/display of data using the url parameters
+POST   : Data creation/modification/adding,change the state of a data
+PUT    : Update or modify data specifying the id
+DELETE : Remove data
+
+4) Explain the difference between stateless and stateful protocol. Which type of protocol is HTTP ?
+
+Stateless = 
+
+- Does not save information related to the request(use of cookies to manage data temporarily)
+- Information are stored on the client side
+
+Statefull = 
+
+- Save information 
+- No client-side data storage
+
+
+We can deduce that HTTP is a stateless protocol because the requests are independent of each other and the storage is done on the client side.
+
+
+5) Explain the difference between a GET and a POST (like how are sent the parameters)
+
+The main difference between GET and POST is that the parameters are sent differently.
+GET  = Parameter are sent by the url
+POST = Parameter are sent with a data form
+
+6) You can’t work out how to solve a coding problem. What do you do to find the answer?
+
+
+First of all if I work on a project with other person. I ask them if they have a solution to my problem. Otherwise, 
+I do internet research to document myself or I inspect forums to find answers to a similar problem. One of the website that I consult the most when I have difficulties is stackoverflow.By this means, I generally find a solution to my problem
+
