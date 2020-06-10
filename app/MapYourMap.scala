@@ -11,21 +11,21 @@ object MapYourMap extends App{
   val devDepartments = Map("dev1" -> "analytics", "dev2" -> "frontend", "dev3" -> "api", "dev4" -> "frontend")
   var namesInDepartments: Map[String, List[String]] = scala.Predef.Map[String, List[String]]()
   var liste: List[String] = List()
-  var iter=1;
+
 
 
 
 
   devDepartments.keys.foreach{ i =>
-    liste =devNames(i)::liste
-    if(namesInDepartments.contains(devDepartments(i))){
+    liste =devNames(i)::liste//add value to the list
+    if(namesInDepartments.contains(devDepartments(i))){//if the map already contain the departement
+     //we add the new member in the departement list
       namesInDepartments += (devDepartments(i) -> (devNames(i) :: (namesInDepartments get devDepartments(i) getOrElse Nil)))
-    }else{
+    }else{// create new departement with the right members
       namesInDepartments+=(devDepartments(i)->liste)
     }
 
-    liste=liste.drop(iter)
-    iter+=1
+    liste=liste.drop(liste.length)//remove all values from the list 
 
   }
   println(namesInDepartments)
